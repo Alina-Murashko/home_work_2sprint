@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { AnimationEventHandler } from 'react'
 import Message from './message/Message'
 import MessageSender from './message-sender/MessageSender'
 import s2 from '../../s1-main/App.module.css'
 import FriendMessage from './friend-message/FriendMessage'
 import avatar from './avatar.png'
+import { UserType } from '../hw03/HW3'
 
 /*
 * 1 - описать тип MessageType
@@ -14,7 +15,21 @@ import avatar from './avatar.png'
 * */
 
 // нужно создать правильный тип вместо any
-export type MessageType = any
+type MessagingType = {
+    text: string
+    time: string
+}
+
+type UserInMessageType = {
+    avatar: string
+    name: string
+}
+
+export type MessageType = {
+    id: number
+    user: UserInMessageType
+    message: MessagingType
+}
 
 // структуру объекта не менять
 export const message0: MessageType = {
@@ -41,6 +56,7 @@ export const friendMessage0: MessageType = {
 }
 
 const HW1 = () => {
+    
     return (
         <div id={'hw1'}>
             <div className={s2.hwTitle}>Homework #1</div>

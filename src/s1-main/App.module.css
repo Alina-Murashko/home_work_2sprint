@@ -3,9 +3,21 @@
 }
 
 .hw {
-
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:73px;
+    border: 2px solid rgba(84, 80, 80, 0.637);
+    width: 1280px;
+    padding: 131px 0px 216px 0px;
+    
 }
 
-.hwTitle {
 
+.hwTitle {
+    padding: 130px 0 0 50px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 600;
 }
