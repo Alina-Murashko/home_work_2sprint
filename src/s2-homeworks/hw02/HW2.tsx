@@ -32,11 +32,12 @@ const defaultAffairs: AffairType[] = [
     {_id: 3, name: 'games', priority: 'low'},
     {_id: 4, name: 'work', priority: 'high'},
     {_id: 5, name: 'html & css', priority: 'middle'},
+ 
 ]
 
 // pure helper functions
 export const filterAffairs = (affairs:  AffairType[], filter: FilterType): AffairType[] => { 
-    return affairs.filter(el => el.priority !== filter) 
+    return filter === 'all'? affairs : affairs.filter(el => el.priority === filter);
 }
 export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => { 
     return affairs.filter(el => el._id !== _id);
