@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    font-family: Montserrat;
 }
 
 .friendImageAndText {
@@ -44,14 +45,13 @@
 
 .friendName {
     color: #000;
-    font-family: Montserrat;
     font-size: 16px;
     font-weight: 600;
 }
 
 .friendMessageText {
     color: #000;
-    font-family: Montserrat;
+    
     font-size: 16px;
     font-weight: 400;
     word-wrap: break-word;
@@ -61,7 +61,6 @@
     width: 26px;
     margin-left: calc(24px - 26px/2);
     color: #000;
-    font-family: Montserrat;
     font-size: 10px;
     font-weight: 600;
 }
