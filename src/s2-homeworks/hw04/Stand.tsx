@@ -26,7 +26,7 @@ const Stand = () => {
                     <SuperInputText
                         id={'hw4-super-input-with-error'}
                         value={stateForAllInputs}
-                        onChangeText={setValue}
+                        onChangeText={(value) => setValue(value)}
                         error={error}
                         onEnter={() => {
                             setError(
@@ -81,9 +81,7 @@ const Stand = () => {
                         id={'hw4-super-checkbox-with-text'}
                         checked={stateForAllCheckboxes}
                         onChangeChecked={setChecked}
-                    >
-                        some text
-                    </SuperCheckbox>
+                    >some text</SuperCheckbox>
                 </div>
                 {/*совместим со старым кодом:*/}
                 <div>

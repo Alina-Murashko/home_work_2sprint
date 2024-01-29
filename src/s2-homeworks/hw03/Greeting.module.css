@@ -31,11 +31,8 @@
 
 }
 
-.errorInput {
-    outline-color:#CC0000;
-}
 .errorInput:focus {
-   outline-color:#CC0000;
+    outline-color:#CC0000;
 }
 
 .button {
