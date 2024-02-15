@@ -1,21 +1,22 @@
 .App {
     --header_height: 60px;
+   
 }
 
 .hw {
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap:73px;
+    gap:40px;
     border: 2px solid rgba(84, 80, 80, 0.637);
     width: 1280px;
-    padding: 131px 0px 216px 0px;
-    
+    padding: 100px 20px 216px 40px;
 }
 
 
 .hwTitle {
-    padding: 130px 0 0 50px;
+    margin: 60px 0 50px 70px;
     color: #000;
     font-family: Montserrat;
     font-size: 22px;
