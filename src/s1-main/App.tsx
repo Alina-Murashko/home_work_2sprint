@@ -5,6 +5,7 @@ import HW6 from '../s2-homeworks/hw06/HW6'
 import HW7 from '../s2-homeworks/hw07/HW7'
 import HW8 from '../s2-homeworks/hw08/HW8'
 
+
 function App() {
     return (
         <div className={s.App}>
